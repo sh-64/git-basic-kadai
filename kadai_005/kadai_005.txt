@@ -1,0 +1,44 @@
+PS C:\Users\user> git config --global user.name "sh-64"
+PS C:\Users\user> git config --global user.email "haruya.soccer.64@gmail.com"
+PS C:\Users\user> cd "C:\Users\user\Desktop\samurai kadai"
+PS C:\Users\user\Desktop\samurai kadai> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\user\Desktop\samurai kadai
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2024/12/03     17:02                git_challenge
+
+
+PS C:\Users\user\Desktop\samurai kadai> cd git_challenge
+PS C:\Users\user\Desktop\samurai kadai\git_challenge> git init
+Initialized empty Git repository in C:/Users/user/Desktop/samurai kadai/git_challenge/.git/
+PS C:\Users\user\Desktop\samurai kadai\git_challenge> git add "C:\Users\user\Desktop\samurai kadai\git_challenge\hello_world.txt"
+PS C:\Users\user\Desktop\samurai kadai\git_challenge> git commit -m "hello_world.txtを追加”
+[main (root-commit) 7e57bb0] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\user\Desktop\samurai kadai\git_challenge> git add "C:\Users\user\Desktop\samurai kadai\git_challenge\hello_world.txt"
+PS C:\Users\user\Desktop\samurai kadai\git_challenge> git commit "日本語訳を追記”
+
+PS C:\Users\user\Desktop\samurai kadai\git_challenge> git commit -m "日本語訳を追記"
+[main 7103f6c] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\user\Desktop\samurai kadai\git_challenge> git log
+commit 7103f6c83f3203deb47025f625008e5ec4b26a8c (HEAD -> main)
+Author: sh-64 <haruya.soccer.64@gmail.com>
+Date:   Tue Dec 3 17:12:47 2024 +0900
+
+    日本語訳を追記
+
+commit 7e57bb07d051796ed7efbc8f3f55be612c9ac046
+Author: sh-64 <haruya.soccer.64@gmail.com>
+Date:   Tue Dec 3 17:10:13 2024 +0900
+
+    hello_world.txtを追加
+PS C:\Users\user\Desktop\samurai kadai\git_challenge> git log --oneline
+7103f6c (HEAD -> main) 日本語訳を追記
+7e57bb0 hello_world.txtを追加
+PS C:\Users\user\Desktop\samurai kadai\git_challenge> 
